@@ -1,0 +1,21 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:pages="clr-namespace:TabBarBugRepo.Pages"
+             x:Class="TabBarBugRepo.Pages.MobileShell"
+            
+             
+             >
+    <TabBar>
+        <Tab Title="Page 1"
+             >
+            <ShellContent ContentTemplate="{DataTemplate pages:Page1}" />
+        </Tab>
+        <Tab Title="Page 2 and 3">
+            <ShellContent Title="Page 2"
+                          ContentTemplate="{DataTemplate pages:Page2}" />
+            <ShellContent Title="Page 3"
+                          ContentTemplate="{DataTemplate pages:Page3}" />
+            
+        </Tab>
+    </TabBar>
+</Shell>
